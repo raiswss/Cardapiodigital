@@ -1,0 +1,24 @@
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(baseProjetoCardapio/imagens/bg.png);
+    background-repeat: repeat;
+/* descomente para aplicar uma imagem sem repetição */
+/* background-repeat:no repeat;
+background-size:cover */
+}
+
+header{
+    text-align: center;
+    background-color: #1E1F22;
+    z-index: -2;
+}
+nav a{
+    color: white;
+    margin: 0px 10px;
+    text-decoration:none;
+}
