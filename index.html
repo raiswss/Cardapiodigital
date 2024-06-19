@@ -26,9 +26,9 @@
 
     </header>
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas offcanvas-start bg-secondary text-center" tabindex="-1" id="carrinho" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -59,14 +59,20 @@
                     <img src="baseProjetoCardapio/imagens/acomp01.png" class="img-fluid rounded-start" alt="...">
                   </div>
                   <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body text-start">
                       <h5 class="card-title text-dark">Fritas</h5>
                       <p class="card-text"></p>
-                      <p class="card-text text-dark">R$15,00<small class="text-muted"></small></p>
+                      <p class="card-text text-dark">Total: R$15,00<small class="text-muted"></small></p>
+                      <div class="d-flex">
+                        <button class=" btn btn-warning btn-sm" >+</button>
+                        <input type="number" value="1" class="w-75 mx-2 " >
+                        <button class="btn btn-warning btn-sm">-</button>
+                      </div>
+                        </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              
 
 
               <div class="card mb-3" style="max-width: 540px;">
@@ -75,9 +81,14 @@
                     <img src="baseProjetoCardapio/imagens/bebida01.png" class="img-fluid rounded-start" alt="...">
                   </div>
                   <div class="col-md-8">
-                    <div class="card-body">
+                    <div class="card-body text-start">
                       <h5 class="card-title text-dark">Coca-cola</h5>
-                      <p class="card-text">R$5,00</p>
+                      <p class="card-text text-dark">Total: R$5,00</p>
+                      <div class="d-flex">
+                        <button class=" btn btn-warning btn-sm" >+</button>
+                        <input type="number" value="1" class="w-75 mx-2" >
+                        <button class="btn btn-warning btn-sm">-</button>
+                      </div>
                       
                       
                     </div>
@@ -88,6 +99,30 @@
 
         </div>
     </div>
+
+ 
+   <section id="publicidade" class="container">
+        <div id="carouselPublicidade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="chef-prepara-hamburguer-com-cebola-e-tomate-costeleta-de-tomate-alface-e-cebola_140725-8118.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="hamburguer-de-vista-lateral-preto-com-luvas-descartaveis-e-mao-humana-e-batatas-fritas-na-bandeja-de-madeira-no-restaurante_176474-3013.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="um-delicioso-hamburguer-de-carne-grelhada-na-tabua-de-cortar_7502-9885.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
 
 
     <main>
@@ -106,6 +141,26 @@
                     derretido, alface crocante, tomate fresco e um toque especial do nosso molho secreto. Perfeito para
                     saciar sua fome!</p>
                 <button>Pedir</button>
+                <button data-bs-toggle="modal" data-bs-target="#exampleModal" >Ver detalhes</button>
+
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title text-dark" id="exampleModalLabel">Modal title</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-dark">
+                          ...
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
             </div>
 
 
@@ -134,6 +189,9 @@
 
     </main>
 
+  
+
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
